@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>MONOID</title>
+    <script src="javascripts/jquery-3.6.0.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('.header a').each(function() {
+        $(this).on('click', function(e) {
+          e.preventDefault();
+          var scrollTo = $(this).attr('href');
+          var whitespace = scrollTo == '#s1' ? 70 : 30;
+          $('html,body').animate({
+            scrollTop: $(scrollTo).offset().top - whitespace
+          }, 1000);
+        });
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a class="link" href="#description">введение</a>
+        <a class="link">начертания</a>
+        <a class="link">особенности</a>
+      </nav>
+      <section class="intro">
+           <h1 class="title">MONOID</h1>
+           <img class="image" src="images/image1.svg" alt="IMAGE1">
+      </section>
+      <section class="description" id="description">
+        <img class="image2" src="images/image2.svg" alt="IMAGE2">
+      </section>
+      <section class="watch">
+        <img class="image3" src="images/image3.svg" alt="image3">
+      </section>
+      <section class="fonts">
+        <img class="image4" src="images/image4.svg" alt="image4">
+        <h2 class="regular">Regular</h2>
+        <h2 class="italic">Italic</h2>
+        <h2 class="bold">Bold</h2>
+        <h3 class="text1">шрифт имеет<br>3 варианта<br>начертания</h3>
+        <h4 class="prim">Прим.</h4>
+      </section>
+      <section class="glyphs">
+        <img class="image5" src="images/image5.svg" alt="image5">
+        <h3 class="text2">отличительной особенностью<br>шрифта является четкая<br>различимость его символов<br>и глифов</h3>
+        <h3 class="text3">именно поэтому он так<br>нравится программистам</h3>
+        <h4 class="prim2">Прим.</h4>
+      </section>
+      <section class="open">
+        <img class="image6" src="images/image6.svg" alt="image6">
+        <img class="image7" src="images/image7.svg" alt="image7">
+        <h3 class="text4">MONOID — это проект<br>с открытым исходным<br>кодом, шрифт активно<br>меняется и дорабатывается</h3>
+      </section>
+
+
+
+    </div>
+  </body>
+</html>
